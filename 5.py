@@ -6,7 +6,7 @@ if person in known_people:
 else:
   print('You dont {}!'.format(person))
 
-## for example case
+## for example cases
 
 def who_do_you_know():
   people = input('Enter the names of people you know, separated by commas: ')
