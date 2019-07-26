@@ -28,3 +28,22 @@ universities = [
 
 #lottery_player[0].total()
 #lottery_player.total()
+
+##
+
+#for example cases
+
+student = { 'name': 'Ari', 'school': 'Computing', 'grades': (66, 77, 88)}
+
+def average_grades(data):
+  grades = data['grades']
+  return sum(grades)/len(grades)
+
+def average_all_student(student_list):
+  total = 0
+  count = 0
+  for student in student_list:
+    total = total + sum(student['grades'])
+    count = count + len(student['grades'])
+  
+  return total/count
